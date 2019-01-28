@@ -1,0 +1,20 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+functions:
+  openfaas-crud-create:
+    lang: csharp
+    handler: ./openfaas-crud-create
+    image: openfaas-crud-create:latest
+  openfaas-crud-read:
+    lang: csharp
+    handler: ./openfaas-crud-read
+    image: openfaas-crud-read:latest
+  openfaas-crud-update:
+    lang: csharp
+    handler: ./openfaas-crud-update
+    image: openfaas-crud-update:latest
+  openfaas-crud-delete:
+    lang: csharp
+    handler: ./openfaas-crud-delete
+    image: openfaas-crud-delete:latest
